@@ -40,3 +40,41 @@ with these lines:
 and add this line to header.component.ts:
 
     collapsed = true;
+
+
+Allows us to repeat code:
+
+*ngFor=""
+
+Example:
+
+<a href="#" class="list-group-item clearfix" *ngFor="let recipe of recipes">
+
+src="{{ }}" <-- String Interpolation
+
+[src]="" <-- Property Binding
+
+BOTH String Interpolation and Property Binding
+![Alt text](image-1.png)
+
+### Finished Result
+
+![Alt text](image-4.png)
+
+### Shared Items
+
+These two are the same thing
+
+![We are using this one](image-2.png)
+
+![Old method](image-3.png)
+
+## Understanding Errors
+
+- Try opening the Console to read what the error might be
+- CHECK your "divs"
+- Check at runtime why it's not working:
+    - chrome
+    - sources
+    - check the script bundles (try main bundle first)
+    - Can directly access TS files via Webpack. So you don't need to dig through all of that bundled code!
