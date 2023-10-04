@@ -1,5 +1,14 @@
 # Quickstart for a New Angular Setup
 
+**************************************************
+**Need to use GitBash when re-downloading files**
+
+**Also need to reinstall NPM when accessing from another computer**
+
+npm install -g @angular/cli@latest
+
+**************************************************
+
 1. Install Angular
 
     npm install -g @angular/cli@latest

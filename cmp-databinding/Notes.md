@@ -58,7 +58,7 @@ So EVERY one of the elements, except this one, will follow the automatic styling
 
 For example, the headers here
 
-![HEaders](image-5.png)
+![Headers](image-5.png)
 
 ![sTyling](image-6.png)
 
@@ -66,4 +66,79 @@ For example, the headers here
 
 
 ### Using Local References in Templates
+
+In the cockpit ts and html you can pass references instead of a broad one, more specific ones where the server elements are being created in the HTML and TS files.
+
+Removing the two-way binding
+
+  [(ngModel)]="newServerName"
+
+### Getting Access to the Template & DOM with @ViewChild
+
+In Angular 8+, the @ViewChild() syntax which you'll see in this lecture needs to be changed slightly:
+
+Instead of:
+
+  @ViewChild('serverContentInput') serverContentInput: ElementRef;
+
+use
+
+  @ViewChild('serverContentInput', {static: true}) serverContentInput: ElementRef;
+
+The same change (add { static: true } as a second argument) needs to be applied to ALL usages of @ViewChild() (and also @ContentChild() which you'll learn about later) IF you plan on accessing the selected element inside of ngOnInit().
+
+If you DON'T access the selected element in ngOnInit (but anywhere else in your component), set static: false instead!
+
+For projects using Angular 9 or higher (check the package.json file to find out), you can omit static: false, you only need to specify static: true if you plan on using the selected element inside of ngOnInit().
+
+***********************
+
+*Use string interpolation or property binding if you want to access the DOM! Don't directly mess with any elements, even if they are directly in Angular*
+
+### Projecting Content into Components with ng-content
+
+Fix for the error was adding "ElementRef" to the import from Angular
+
+### Understanding the Component Lifecycle
+
+![Different types of Lifecycle hooks](image-8.png)
+
+![Alt text](image-9.png)
+
+THIS! The ngOnInIt...
+
+#### Different Lifecycles
+
+**ngOnChanges**
+First hook we can hook into, can be executed at mult times. Executed right at start. Properties decorated with at input
+
+**ngOnInIt**
+Angular will call on a hook. This method is called once the component is initialized (ngOnInIt). Object was created, will run AFTER the constructor. Object created, and properties can now be accessed.
+
+**ngDoCheck**
+Run multiple times, executed a lot, run whenever change detection runs. Any time a change in a component happens, updates to change in template. An event, Angular needs to check even if nothing happens
+
+Is great if there's something you want to check on every change detection cycle
+
+**ngAfterContentInIt**
+
+This is called whenever the content which is projected by ngcontent has been initialized, the view of the parent component, which is added to our component through ng-content
+
+**ngAfterContentChecked**
+
+Executed whenever change detection checks this content
+
+**ngAfterViewInIt**
+
+Once the view of our own component has finized inistializing, once view is intialized
+
+**ngAfterViewChecked**
+
+Called every time the view (and child views) have been checked
+
+**ngOnDestroyed**
+
+Set to false components, calls when the component is going to be destroyed by Angular
+
+### Seeing Lifecycle Hooks in Action
 
