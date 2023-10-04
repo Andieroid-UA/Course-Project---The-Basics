@@ -78,3 +78,8 @@ These two are the same thing
     - sources
     - check the script bundles (try main bundle first)
     - Can directly access TS files via Webpack. So you don't need to dig through all of that bundled code!
+
+**************************************************
+(Need to use GitBash when re-downloading files)
+
+

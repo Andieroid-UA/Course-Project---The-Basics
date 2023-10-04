@@ -15,7 +15,7 @@ Choose "CSS"
 
 3. Install Bootstrap
 
-    npm install --save bootstrap@3
+    npm install --save bootstrap@5
 
 4. Add Bootstrap to the angular.JSON file
 
