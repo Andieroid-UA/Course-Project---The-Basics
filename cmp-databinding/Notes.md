@@ -142,3 +142,26 @@ Set to false components, calls when the component is going to be destroyed by An
 
 ### Seeing Lifecycle Hooks in Action
 
+In Angular in development mode, ngDoCheck does one extra check.
+
+You RARELY need to use all of these hooks.
+
+### Lifecycle Hooks and Template Access
+
+***
+
+### Getting Access to ng-content with @ContentChild
+
+As mentioned a few lectures ago, in Angular 8+, the @ViewChild() and @ContentChild() syntaxes need to be changed slightly:
+
+Instead of:
+
+@ContentChild('contentParagraph') paragraph: ElementRef;
+use
+
+@ContentChild('contentParagraph', {static: true}) paragraph: ElementRef;
+If you DON'T access the selected element in ngOnInit (but anywhere else in your component), set static: false instead!
+For projects using Angular 9 or higher (check the package.json file to find out), you can omit static: false, you only need to specify static: true if you plan on using the selected element inside of ngOnInit().
+
+### Assignment: Components & Databinding
+
