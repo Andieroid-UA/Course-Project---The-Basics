@@ -78,3 +78,11 @@ These two are the same thing
     - sources
     - check the script bundles (try main bundle first)
     - Can directly access TS files via Webpack. So you don't need to dig through all of that bundled code!
+
+
+## Understanding Directives
+
+Attribute vs Structural
+
+![Alt text](image-5.png)
+
