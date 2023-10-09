@@ -91,6 +91,17 @@ Attribute vs Structural
 
 ![Application Layout](image-5.png)
 
+## Adding Servies
+
+![Adding Services](image-7.png)
+
+
+
+
+
+
+
+
 
 # Things to Fix
 
