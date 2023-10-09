@@ -86,3 +86,13 @@ Attribute vs Structural
 
 ![Alt text](image-5.png)
 
+
+## What are Services?
+
+![Application Layout](image-5.png)
+
+
+# Things to Fix
+
+1. When you click on the "Test Recipe" icon it does not preview the recipe
+    2. Underneath this error, we need to test the dropdown beneath it to make sure it works!
