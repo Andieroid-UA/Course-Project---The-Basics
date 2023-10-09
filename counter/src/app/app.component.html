@@ -6,7 +6,7 @@
         (click)="onlyOdd = !onlyOdd">Only show odd numbers</button>
       <br><br>
       <ul class="list-group">
-        <div>
+        <div *ngIf="onlyOdd">
             <li
             class="list-group-item"
             [ngClass]="{odd: odd % 2 !== 0}"
@@ -46,7 +46,7 @@
           </div>
       </ul>
       <p appBasicHighlight>Style me with basic highlight directive</p>
-      <p appBetterHighlight="'red'" defaultColor="'yellow'">Style me with basic highlight directive</p>
+      <p [appBetterHighlight]="'red'" [defaultColor]="'yellow'">Style me with basic highlight directive</p>
       <div [ngSwitch]="value">
         <p *ngSwitchCase="5">Value is 5</p>
         <p *ngSwitchCase="10">Value is 10</p>
