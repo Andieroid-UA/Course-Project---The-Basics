@@ -8,9 +8,11 @@ import { Recipe } from '../../recipe.model';
 })
 export class RecipeItemComponent {
 @Input() recipe: Recipe;
-@Output() recipieSelected = new EventEmitter<void>();
+@Output() recipeSelected = new EventEmitter<void>();
+
+constructor() { }
 
 onSelected(){
-  this.recipieSelected.emit();
+  this.recipeSelected.emit();
 }
 }

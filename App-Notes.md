@@ -96,3 +96,14 @@ Attribute vs Structural
 
 1. When you click on the "Test Recipe" icon it does not preview the recipe
     2. Underneath this error, we need to test the dropdown beneath it to make sure it works!
+
+Solution:
+
+Somewhere between THESE two videos an error occured to where pressing on the Recipe Button does not show the recipe...
+
+*Rewatched Displaying Recipe Details*
+*Passing Data with Event and Property Binding (Combined)*
+
+![Error Found](image-6.png)
+
+I didn't specify pass the recipeEl element!! It works now. Drop down also works!
