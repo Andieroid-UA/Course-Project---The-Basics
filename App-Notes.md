@@ -96,13 +96,6 @@ Attribute vs Structural
 ![Adding Services](image-7.png)
 
 
-
-
-
-
-
-
-
 # Things to Fix
 
 1. When you click on the "Test Recipe" icon it does not preview the recipe
@@ -118,3 +111,20 @@ Somewhere between THESE two videos an error occured to where pressing on the Rec
 ![Error Found](image-6.png)
 
 I didn't specify pass the recipeEl element!! It works now. Drop down also works!
+---------------------------
+
+2. Shopping list won't itemize any ingredients I put in manually
+
+Errors listed:
+
+- When I click on the Shopping List tab (core.mjs:10592 )
+
+- When I try to add an ingredient (shopping-edit.component.html:25)
+
+
+FIXED:
+
+- I got the adding single ingredients to work, now need to fix adding from the recipes list (had an @ symbol instead of a #)
+
+*Oh wow! Found another issue, where it wasn't even listing the ingredients, this is now fixed*
+
