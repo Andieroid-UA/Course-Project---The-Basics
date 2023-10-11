@@ -128,3 +128,4 @@ FIXED:
 
 *Oh wow! Found another issue, where it wasn't even listing the ingredients, this is now fixed*
 
+-Update: Found the error! It was missing a set of parenthesis on the click action for the button!
