@@ -109,8 +109,31 @@ Oh! This highlights the tabs at the top :)
 
 ## Fixing Page Reload Issues
 
+Added a cursor pointer to all of the boxes that are "clickable".
+
+## Child Routes
+## Configuring Route Parameters
+## Passing Dynamic Parameters to Links
+## Styling Active Recipe Items
+
+## Adding Editing Routes
+
+These NEED to be in a very precise order...
+
+![Alt text](image-9.png)
+
+## Retrieving Route Parameters
+
+So now we are able to tell if we are in edit mode for the recipe pages
+
+## Programmatic Navigation to the Edit Page/ Cleanup
+
+We now have buttons that go to another page for editing the material. Cannot edit said material just yet..
 
 
+
+
+*************************
 
 # Things to Fix
 
