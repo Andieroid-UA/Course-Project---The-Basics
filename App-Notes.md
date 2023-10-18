@@ -95,6 +95,22 @@ Attribute vs Structural
 
 ![Adding Services](image-7.png)
 
+## Planning the General Structure
+
+![Alt text](image-8.png)
+
+## Setting up Routes
+
+See if it's a pre-fix word path...
+
+## Marking Active Routes
+
+Oh! This highlights the tabs at the top :)
+
+## Fixing Page Reload Issues
+
+
+
 
 # Things to Fix
 
@@ -129,3 +145,7 @@ FIXED:
 *Oh wow! Found another issue, where it wasn't even listing the ingredients, this is now fixed*
 
 -Update: Found the error! It was missing a set of parenthesis on the click action for the button!
+
+-------------------------------------
+
+3. 
