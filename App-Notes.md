@@ -130,6 +130,8 @@ So now we are able to tell if we are in edit mode for the recipe pages
 
 We now have buttons that go to another page for editing the material. Cannot edit said material just yet..
 
+## Improving the Reactive Service with Observables (Subjects)
+
 
 
 
