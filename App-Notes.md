@@ -132,6 +132,31 @@ We now have buttons that go to another page for editing the material. Cannot edi
 
 ## Improving the Reactive Service with Observables (Subjects)
 
+## TD: Adding the Shopping List Form
+
+Need to add a form when you add a recipe and in the shopping list!
+
+## Adding validation to the form
+
+## Allowing the Selection of items in the list
+
+## Loading the shopping list items into the form
+
+*there is a bug here, when I click on an item, it does not update on the input portion of the form*
+
+## Updating existing items
+
+## Resetting the Form
+
+## Allowing the user to clear (cancel) the form
+
+*Noticed here that I also can't clear the form. That same bug must have something to do with submission/the form itself! <-- NEVERMIND! I forgot paranthesis again
+
+## Allowing the deletion of shopping list items
+
+
+
+
 
 
 
@@ -173,4 +198,10 @@ FIXED:
 
 -------------------------------------
 
-3. 
+3. Found in "Loading the shopping list items into the form"
+
+*when I click on an item, it does not update on the input portion of the form*
+
+
+
+*Noticed that I also can't clear the form. That same bug must have something to do with submission/the form itself! <-- NEVERMIND! I forgot paranthesis again

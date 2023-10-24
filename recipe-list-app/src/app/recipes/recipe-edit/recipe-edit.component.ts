@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-recipe-edit',
@@ -9,6 +10,7 @@ import { ActivatedRoute, Params } from '@angular/router';
 export class RecipeEditComponent {
   id: number;
   editMode = false;
+  recipeForm: FormGroup;
 
   constructor (private route: ActivatedRoute) {}
 
@@ -21,5 +23,13 @@ export class RecipeEditComponent {
         console.log(this.editMode);
       }
     );
+  }
+
+  private initForm() {
+    this.recipeForm = new FormGroup({
+      'name': '',
+      'imagePath': '',
+      'description': ''
+    });
   }
 }
