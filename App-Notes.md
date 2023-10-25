@@ -154,6 +154,42 @@ Need to add a form when you add a recipe and in the shopping list!
 
 ## Allowing the deletion of shopping list items
 
+## Creating the Template for the (Reactive) Recipe Edit Form
+
+## Syncing HTML with the Form
+
+## Adding Ingredient Controls to a Form Array
+
+In this lecture, we'll add some code to access the controls of our form array:
+
+*ngFor="let ingredientCtrl of recipeForm.get('ingredients').controls; let i = index"
+
+This code will fail with the latest Angular version.
+
+You can fix it easily though. Outsource the "get the controls" logic into a getter of your component code (the .ts file):
+
+get controls() { // a getter!
+  return (<FormArray>this.recipeForm.get('ingredients')).controls;
+}
+In the template, you can then use:
+
+*ngFor="let ingredientCtrl of controls; let i = index"
+
+This adjustment is required due to the way TS works and Angular parses your templates (it doesn't understand TS there).
+
+## Adding new Ingredient Controls
+
+## Validating User Input
+
+## Submitting the Recipe Edit Form
+
+There's an error here, can't add new stuff! Also the red error boxes do not show up with creating a new recipe...
+
+## Adding a Delete and Clear (Cancel) Functionality
+
+
+
+
 
 
 
@@ -161,13 +197,21 @@ Need to add a form when you add a recipe and in the shopping list!
 
 
 *************************
-
 # Things to Fix
+*************************
+
+----------OPEN BUGS----------
+
+5. Found in "Submitting the Recipe Edit Form"
+
+There's an error here, can't add new stuff! Also the red error boxes do not show up with creating a new recipe...
+
+----------CLOSED BUGS----------
 
 1. When you click on the "Test Recipe" icon it does not preview the recipe
     2. Underneath this error, we need to test the dropdown beneath it to make sure it works!
 
-Solution:
+*Solution:*
 
 Somewhere between THESE two videos an error occured to where pressing on the Recipe Button does not show the recipe...
 
@@ -187,21 +231,34 @@ Errors listed:
 
 - When I try to add an ingredient (shopping-edit.component.html:25)
 
-
-FIXED:
+*Solution:*
 
 - I got the adding single ingredients to work, now need to fix adding from the recipes list (had an @ symbol instead of a #)
 
-*Oh wow! Found another issue, where it wasn't even listing the ingredients, this is now fixed*
+Oh wow! Found another issue, where it wasn't even listing the ingredients, this is now fixed
 
 -Update: Found the error! It was missing a set of parenthesis on the click action for the button!
 
--------------------------------------
+---------------------------
 
 3. Found in "Loading the shopping list items into the form"
 
-*when I click on an item, it does not update on the input portion of the form*
+when I click on an item, it does not update on the input portion of the form
 
+*Solution*
 
+![Alt text](image-10.png)
+
+I didn't add parenthesis to the click listener. Learning I have a weakness with these...
 
 *Noticed that I also can't clear the form. That same bug must have something to do with submission/the form itself! <-- NEVERMIND! I forgot paranthesis again
+
+---------------------------
+
+4. Found in "Adding new Ingredient Controls"
+
+I messed up my divs and now one is out of place and is wrecking my form!
+
+*Solution:*
+
+I had to fix the col-xs-12 around line 56!! And delete a few divs...
