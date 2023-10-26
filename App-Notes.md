@@ -187,13 +187,26 @@ There's an error here, can't add new stuff! Also the red error boxes do not show
 
 ## Adding a Delete and Clear (Cancel) Functionality
 
+## Redirecting the User (after Deleting a Recipe)
 
+## Adding an Image Preview (back in)
 
+Strange! Noticing here if I try to delete an ingredient it circles me back to the recipe page listing the ingredients...
 
+## Providing the Recipe Service Correctly
 
+## Deleting Ingredients and Some Finishing Touches
 
+## Deleting all items in a formarray
 
+As of Angular 8+, there's a new way of clearing all items in a FormArray.
 
+(<FormArray>this.recipeForm.get('ingredients')).clear();
+The clear() method automatically loops through all registered FormControls (or FormGroups) in the FormArray and removes them.
+
+It's like manually creating a loop and calling removeAt() for every item.
+
+*You've stopped HERE*
 
 
 *************************
@@ -205,6 +218,8 @@ There's an error here, can't add new stuff! Also the red error boxes do not show
 5. Found in "Submitting the Recipe Edit Form"
 
 There's an error here, can't add new stuff! Also the red error boxes do not show up with creating a new recipe...
+
+Strange! Noticing here if I try to delete an ingredient it circles me back to the recipe page listing the ingredients...
 
 ----------CLOSED BUGS----------
 
