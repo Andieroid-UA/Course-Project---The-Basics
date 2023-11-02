@@ -206,8 +206,27 @@ The clear() method automatically loops through all registered FormControls (or F
 
 It's like manually creating a loop and calling removeAt() for every item.
 
-*You've stopped HERE*
+## Module Introduction to Http
 
+## Backend (Firebase) Setup
+
+## Setting up the DataStorage Service
+
+## Storing Recipes
+
+![Alt text](image-11.png)
+
+Group all of the angular imports together. Makes it easier when they are categorized.
+
+## Fetching Recipes
+
+## Transforming Response Data
+
+## Resolving Data Befpre Loading
+
+## Fixing a Bug with the Resolver
+
+*Help. I deleted my recipes and now they won't come back...*
 
 *************************
 # Things to Fix
@@ -220,6 +239,8 @@ It's like manually creating a loop and calling removeAt() for every item.
 There's an error here, can't add new stuff! Also the red error boxes do not show up with creating a new recipe...
 
 Strange! Noticing here if I try to delete an ingredient it circles me back to the recipe page listing the ingredients...
+
+6. I can't get back the recipes since they were deleted.... off the mock server
 
 ----------CLOSED BUGS----------
 
