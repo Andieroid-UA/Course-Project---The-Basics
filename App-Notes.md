@@ -234,6 +234,10 @@ Group all of the angular imports together. Makes it easier when they are categor
 
 ## Adding the Auth Page
 
+## Switching Between Auth Modes
+
+
+
 
 
 *************************
@@ -252,6 +256,8 @@ Strange! Noticing here if I try to delete an ingredient it circles me back to th
 
 
 ![Alt text](image-12.png)
+
+
 
 
 
