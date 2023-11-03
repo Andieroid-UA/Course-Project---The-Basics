@@ -228,6 +228,14 @@ Group all of the angular imports together. Makes it easier when they are categor
 
 *Help. I deleted my recipes and now they won't come back...*
 
+## How Authentication Works
+
+![Alt text](image-13.png)
+
+## Adding the Auth Page
+
+
+
 *************************
 # Things to Fix
 *************************
@@ -241,6 +249,14 @@ There's an error here, can't add new stuff! Also the red error boxes do not show
 Strange! Noticing here if I try to delete an ingredient it circles me back to the recipe page listing the ingredients...
 
 6. I can't get back the recipes since they were deleted.... off the mock server
+
+
+![Alt text](image-12.png)
+
+
+
+
+
 
 ----------CLOSED BUGS----------
 
