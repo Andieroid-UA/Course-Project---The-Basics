@@ -236,7 +236,19 @@ Group all of the angular imports together. Makes it easier when they are categor
 
 ## Switching Between Auth Modes
 
+## Handling Form Input
 
+![Alt text](image-14.png)
+
+This gives you access to the Angular Form object
+
+How to sign up new users and log them in...
+
+## Preparing the Backend
+
+You don't technically need just Firebase, you can use multiple things to get a backend to a site.
+
+## 
 
 
 
