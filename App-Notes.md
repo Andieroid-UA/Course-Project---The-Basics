@@ -248,7 +248,23 @@ How to sign up new users and log them in...
 
 You don't technically need just Firebase, you can use multiple things to get a backend to a site.
 
-## 
+## Adding a Loading Spinner & Error Handling Logic
+
+OOOOH! Loading.io has super cool CSS animations.
+
+https://loading.io/css/
+
+## Improving Error Handling
+
+## Sending Login Requests
+
+## Login Error Handling
+
+## Creating & Storing the User Data
+
+## Reflecting the Auth State in the UI
+
+... now it's not working because of more deprications... i'll fix this later. Just going to finish then I'll figure out how to update this.
 
 
 
