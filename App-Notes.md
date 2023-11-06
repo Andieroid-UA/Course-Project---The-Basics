@@ -266,7 +266,38 @@ https://loading.io/css/
 
 ... now it's not working because of more deprications... i'll fix this later. Just going to finish then I'll figure out how to update this.
 
+## Adding the Token to Outgoing Requests
 
+## Attaching the Token with an Interceptor
+
+## Adding Logout
+
+## Adding Auto-Login
+
+## Adding Auto-Logout
+
+## Adding an Auth Guard
+
+## WRap Up
+
+- added an offservice to our A, to manage frontend auth needs.
+- sign user up and sign them in
+- switching between sign up and signin
+- storing a token after successful login, and persists with reload
+- use token to fetch and save data
+
+- Firebase is JUST one example. Expires in an hour. Process of tokens is pretty much the same. You want to store in a place that survives reloads
+
+- And make sure it clears once it's expired
+
+- Using routing guard against unauth access (you need to login to view recipes)
+
+## Useful Resources & Links
+
+Useful Docs:
+
+Firebase Auth REST API Docs: https://firebase.google.com/docs/reference/rest/auth
+More on JWT: https://jwt.io 
 
 *************************
 # Things to Fix
