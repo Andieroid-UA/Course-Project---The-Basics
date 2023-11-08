@@ -299,6 +299,71 @@ Useful Docs:
 Firebase Auth REST API Docs: https://firebase.google.com/docs/reference/rest/auth
 More on JWT: https://jwt.io 
 
+## Intro to Dynamic Components
+
+Not a specific feature but we can load components through our code?
+
+How to load and communicate and get rid of it in the code
+
+## Adding an Alert Modal Component
+
+Made an alert Pop-up
+
+## Understanding the Different Approaches
+
+![Alt text](image-15.png)
+
+## Using ngIf
+
+We added the alert box
+
+## Preparing Programmatic Creation
+
+![Alt text](image-16.png)
+
+NOW FORGET THIS, WE'RE DOING THIS ANOTHER WAY!
+
+![Alt text](image-17.png)
+
+Not this either, because it is not written for Angular
+
+## Creating a Component Programmatically
+
+## Understanding entryComponents
+
+1st place A would find a component, in your templates like in recipe-list/component like @Recipe-item.
+
+2nd place A would look is in your routes. Like in app-routing.module.ts
+
+One place IT DOES NOT WORK is if you want to create a component manually in code. We're creating a component factory here:
+
+![Alt text](image-18.png)
+
+We don't need this part, because we're using a version of Angular past ver 9
+
+![Alt text](image-19.png)
+
+
+## Data Binding & Event Binding
+
+## Wrap Up
+
+WOW! That was pretty short! Awesome, now I can add this to the TaskIt project
+
+Useful Resources:
+
+Official Docs: https://angular.io/guide/dynamic-component-loader
+
+
+## Angular Modules & Optimizing Angular Apps Intro
+
+## What are (Angular) Modules?
+
+....
+
+
+
+
 *************************
 # Things to Fix
 *************************
