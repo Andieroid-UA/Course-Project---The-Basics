@@ -359,7 +359,107 @@ Official Docs: https://angular.io/guide/dynamic-component-loader
 
 ## What are (Angular) Modules?
 
-....
+![Alt text](image-20.png)
+
+## Analyzing the AppModule
+
+So we're already using two modules
+
+![Alt text](image-21.png)
+
+![Alt text](image-22.png)
+
+Both of these are calling NgModule.
+
+So declerations is the array of components, directives, and custom pipes.
+
+Imports array allows you to import other modules into this module. Split the array into seperate modules.
+
+Providers is the array for services, any injected services go in the app module or provided in the root key through @injectable.
+
+need to export routermodule so it's not just available in that module. But it's available in the imported approutingmodule. So tying everything together.
+
+Think of taking it out of it's silo. And everything works!
+
+Bigger the module, need to make leaner modules easier to manage and understand. AND to enhance components. Splitting components = enhance performance!
+
+So smaller bites, tasks for all.
+
+## Getting Started with Feature Modules
+
+![Alt text](image-23.png)
+
+** What's a module again?
+A: a mechanism to group components, directives, pipes and services that are related, in such a way that can be combined with other modules to create an application. An Angular application can be thought of as a puzzle where each piece (or each module) is needed to be able to see the full picture.
+
+CAn split the AppModule into two more modules, like AppModule AND ProductsModule
+
+
+Ahh... I see. You export to share them with the OG App module if I need to call on it at some point. 
+
+Also understanding WHY things are in a certain order. They're so if the project gets bigger, things are organized so if we need to move them into seperate modules it's WAY EASIER for the next person!
+
+And recipes module is JUST to tell where the thing is in the project, has nothing to do with... Angular
+
+## Splitting Modules Correctly
+
+The Browser Module MUST only be used ONCE!! And that's in the app.module
+
+Instead we are going to use the CommonModule
+
+## Adding Routes to Feature Modules
+
+![Alt text](image-24.png)
+
+Something about merging into root routes...
+
+## Component Declarations
+
+![Alt text](image-25.png)
+
+So we're no longer exporting the modules, but using them embedded into the components OR they're being imported
+
+## The ShoppingList Feature Module
+
+Neato! We made a shopping list module to house that stuff
+
+## Understanding Shared Modules
+
+![Alt text](image-26.png)
+
+To help get leaner modules
+
+## Understanding the Core Module
+
+![Alt text](image-27.png)
+
+
+
+
+**********************************************************
+
+## Adding an Auth Feature Module
+
+## Understanding Lazy Loading
+
+## Implementing Lazy Loading
+
+## More Lazy Loading
+
+## Preloading Lazy-Loaded Code
+
+## Modules & Services
+
+## Loading Services Differently
+
+## Ahead-of-Time Compliation
+
+## Wrap Up
+
+
+
+
+
 
 
 
@@ -369,22 +469,6 @@ Official Docs: https://angular.io/guide/dynamic-component-loader
 *************************
 
 ----------OPEN BUGS----------
-
-5. Found in "Submitting the Recipe Edit Form"
-
-There's an error here, can't add new stuff! Also the red error boxes do not show up with creating a new recipe...
-
-Strange! Noticing here if I try to delete an ingredient it circles me back to the recipe page listing the ingredients...
-
-6. I can't get back the recipes since they were deleted.... off the mock server
-
-
-![Alt text](image-12.png)
-
-
-
-
-
 
 
 
@@ -444,3 +528,69 @@ I messed up my divs and now one is out of place and is wrecking my form!
 *Solution:*
 
 I had to fix the col-xs-12 around line 56!! And delete a few divs...
+
+<https://www.asciiart.eu/cartoons/beavis-and-butt-head>
+------------------------------------
+              /~~~\
+            -/     \--\.
+          ./           `.
+        .-/             |\
+       / /                \
+    .-/                    \
+    `/                     |
+   /                      -)
+  .                        '.
+ /                          \
+ |                          |
+ |                          /
+ /                        ./
+|                     . \ |
+|                  ) \ .) )
+|                | | ). )/
+|               |) )/ ///
+ .             .)----~~~.
+ \             /~        \
+ \            /           \
+ \           /            '
+ |          |              |
+ .          |              |
+  .         |              |
+  \         |              \
+  `          \     \.       |
+   .         \      \.      |
+   \          .      \     |
+    .         \       \    |.
+    \          .       ~.  /'
+     \         \      .-.  |
+     |    -    )      ( \ .-.
+      .  . |||        . o\(o)
+      \  |('          \  )\_/
+      \   \)           ~-~| |
+      .  |)               \'
+       \  |~            .-. \)
+       `..             ./0o  \
+        \|             (___-  )
+        \|                 \~~'          
+         \         .--\___  )           Fire,
+         |        /-'-(_(|~T        <    Fire,
+         `\     |      <'~~               FIRE!
+          \     \ ___   \-__.
+          |      \__---~~   )
+          |    (           /'
+          |     ~-'        |
+          |           _____'
+          |        _-~  
+          |       /
+                 .'
+                 /
+------ TO THE SHADOW REALM (I started the project over with Max's Save)----------------------
+
+5. Found in "Submitting the Recipe Edit Form"
+
+There's an error here, can't add new stuff! Also the red error boxes do not show up with creating a new recipe...
+
+Strange! Noticing here if I try to delete an ingredient it circles me back to the recipe page listing the ingredients...
+
+6. I can't get back the recipes since they were deleted.... off the mock server
+
+![Alt text](image-12.png)
