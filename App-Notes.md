@@ -476,11 +476,13 @@ Why would you use this syntax? In the future, it'll replace the "string-only" ap
 
 ## More Lazy Loading
 
-
-
 ## Preloading Lazy-Loaded Code
 
+Bigger module, slower internet connection, longer delays will be. Can tell Angular to pre-load modules to prevent this delay!
+
 ## Modules & Services
+
+![Alt text](image-30.png)
 
 ## Loading Services Differently
 
@@ -488,9 +490,15 @@ Why would you use this syntax? In the future, it'll replace the "string-only" ap
 
 ## Wrap Up
 
+Useful Resources:
+
+Official Docs: https://angular.io/guide/ngmodules
+NgModules FAQ: https://angular.io/guide/ngmodule-faq
 
 
+*Under Data Storage Service* Is where you put the Realtime Database
 
+![Alt text](image-31.png)
 
 
 
