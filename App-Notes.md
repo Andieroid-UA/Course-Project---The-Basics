@@ -433,12 +433,10 @@ To help get leaner modules
 
 ![Alt text](image-27.png)
 
-
-
-
 **********************************************************
-
 ## Adding an Auth Feature Module
+
+
 
 ## Understanding Lazy Loading
 
