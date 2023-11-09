@@ -436,13 +436,47 @@ To help get leaner modules
 **********************************************************
 ## Adding an Auth Feature Module
 
-
+Cleaning up and making yet another module... make more lean
 
 ## Understanding Lazy Loading
 
+So splitting does NOT influence the performance of the app, just how we can edit and access and change files
+
+![Alt text](image-28.png)
+
+Only load the parts of these code WHEN we need it
+
+![Alt text](image-29.png)
+
+Don't load unless we visit that module...
+
 ## Implementing Lazy Loading
 
+If you're using Angular 8+, you can use an alternative syntax for specifying lazy-loaded routes:
+
+Instead of
+
+const routes: Routes = [{
+  path: 'your-path',
+  loadChildren: './your-module-path/module-name.module#ModuleName'
+}];
+you can use
+
+const routes: Routes = [{
+  path: 'your-path',
+  loadChildren: () => import('./your-module-path/module-name.module').then(m => m.ModuleName)
+}];
+Please note, that you need to ensure that in your tsconfig.json file, you use
+
+"module": "esnext",
+instead of
+
+"module": "es2015",
+Why would you use this syntax? In the future, it'll replace the "string-only" approach (i.e. the first alternative mentioned here). It also will give you better IDE support.
+
 ## More Lazy Loading
+
+
 
 ## Preloading Lazy-Loaded Code
 
