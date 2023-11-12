@@ -500,6 +500,85 @@ NgModules FAQ: https://angular.io/guide/ngmodule-faq
 
 ![Alt text](image-31.png)
 
+***********************************
+# Deploying an Angular App
+
+## Module Introduction
+
+Ship to a server, with it's own domain, where anyone can visit on the web!
+
+## Deployment Preparation & Steps
+
+To deploy:
+
+- Check your environment variables
+- polish and test your code (that you did in the last section, like lazy loading)
+- The app you are shipping MUST be as small as possible, so users download as little as possible with
+  ng build --prod (or just ng build)
+
+- Once you build it you can deploy to a "static" host. A web server that is capable of hosting web stuff, but isn't capable of running things like nodejs (except if I am working with 3js which I will need node...)
+
+![Alt text](image-32.png)
+
+## Using Environment Variables
+
+(we don't have an environments folder btw) but we have different options...
+WAIT WE ARE USING AN API KEY THOUGH. But in the auth.service.ts
+
+IT's worth it to move to the environment folder/file... by creating it? How do we create that environment folder/file??
+
+## Example: Deploying to Firebase Hosting
+
+
+
+## Server-side Routing vs Client-side Routing
+
+
+
+***********************************
+# Angular Animations
+
+## Module Introduction
+
+
+
+## Setting up a starting project
+
+
+
+## Animations Triggers and state
+
+
+
+## Switching between states
+
+
+
+## Transitions
+
+
+
+## Advanced transitions
+
+
+
+
+***********************************
+# Adding Offline Capabilities with Service Workers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
