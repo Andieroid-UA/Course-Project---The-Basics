@@ -522,59 +522,29 @@ To deploy:
 
 ## Using Environment Variables
 
-(we don't have an environments folder btw) but we have different options...
-WAIT WE ARE USING AN API KEY THOUGH. But in the auth.service.ts
-
-IT's worth it to move to the environment folder/file... by creating it? How do we create that environment folder/file??
+IT's worth it to move your API to the environment folder/file... by creating it? How do we create that environment folder/file??
 
 ## Example: Deploying to Firebase Hosting
 
+This is if you want to host off of Firebase, but you don't have to (for instance, for ThreeJS I'm using Vercel)
 
+  npm install -g firebase-tools
+
+Then you need to sign in to Firebase
+  firebase login
+
+Then log in to firebase
+  firebase init
+
+*Okay, idk if it worked. I think it just linked to Github...
 
 ## Server-side Routing vs Client-side Routing
 
+When deploying your Angular app, it's really important to make sure that your server (like S3) is configured to always serve the index.html file.
 
-
-***********************************
-# Angular Animations
-
-## Module Introduction
-
-
-
-## Setting up a starting project
-
-
-
-## Animations Triggers and state
-
-
-
-## Switching between states
-
-
-
-## Transitions
-
-
-
-## Advanced transitions
-
-
-
+Here's why: https://academind.com/learn/angular/angular-q-a/#how-to-fix-broken-routes-after-deployment
 
 ***********************************
-# Adding Offline Capabilities with Service Workers
-
-
-
-
-
-
-
-
-
-
 
 
 
