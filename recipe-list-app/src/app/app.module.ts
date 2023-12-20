@@ -9,6 +9,8 @@ import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core.module';
 import { LoggingService } from './logging.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ShoppingListService } from './shopping-list/shopping-list.service';
+import { RecipeService } from './recipes/recipe.service';
 
 @NgModule({
   declarations: [AppComponent, HeaderComponent],
@@ -22,6 +24,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CoreModule
   ],
   bootstrap: [AppComponent],
-  // providers: [LoggingService]
+  providers: [
+    ShoppingListService,
+    RecipeService
+  ]
 })
 export class AppModule {}
